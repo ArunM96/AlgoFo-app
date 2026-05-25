@@ -323,7 +323,7 @@ function AlgoTerminal() {
     // ── API helpers ──
     // Backend server handles all Upstox calls (no CORS issues)
     // Backend URL — set to your Render/Railway URL after deploying
-    const [backendUrl, setBackendUrl] = useLS("backend_url", "");
+    const [backendUrl, setBackendUrl] = useLS("backend_url", "http://103.212.121.100:8080");
     const [backendUrlInput, setBackendUrlInput] = useState(() => {
         try {
             return localStorage.getItem("backend_url") || "";
